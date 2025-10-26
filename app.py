@@ -84,8 +84,6 @@ df = load_weekly_data()
 # 📅 Week Selection — Simplified UI
 # ==============================================================
 
-st.markdown("## Weekly Agent Rankings")
-
 valid_weeks = pd.to_datetime(sorted(df["week_start"].unique())).tz_localize(None)
 current_index = len(valid_weeks) - 1  # start at most recent week
 
